@@ -1,0 +1,30 @@
+﻿<Window x:Class="Examen_Emanuel_Aguilar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examen_Emanuel_Aguilar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,-41.4,-54">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="691*"/>
+            <ColumnDefinition Width="237*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nombre del Empleado:" HorizontalAlignment="Left" Margin="61,46,0,0" VerticalAlignment="Top" Height="51" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtNombreEmpleado" HorizontalAlignment="Left" Height="30" Margin="304,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20"/>
+        <Label Content="Identidad:" HorizontalAlignment="Left" Margin="61,102,0,0" VerticalAlignment="Top" Height="53" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtIdentidad" HorizontalAlignment="Left" Height="30" Margin="304,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20"/>
+        <Label Content="Horas Trabajadas: " HorizontalAlignment="Left" Margin="61,160,0,0" VerticalAlignment="Top" Height="51" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtHorasTrabajadas" HorizontalAlignment="Left" Height="30" Margin="304,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20"/>
+        <Label Content="Pago Por Hora Normal:" HorizontalAlignment="Left" Margin="61,221,0,0" VerticalAlignment="Top" Height="48" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtPagoPorHora" HorizontalAlignment="Left" Height="30" Margin="304,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20"/>
+        <Label Content="Horas Extras:" HorizontalAlignment="Left" Margin="61,274,0,0" VerticalAlignment="Top" Height="46" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtHorasExtras" HorizontalAlignment="Left" Height="30" Margin="304,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Pago Por Hora Extra:" HorizontalAlignment="Left" Margin="61,325,0,0" VerticalAlignment="Top" Height="56" Width="243" FontSize="20"/>
+        <TextBox x:Name="txtPagoHorasExtras" HorizontalAlignment="Left" Height="30" Margin="304,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="20"/>
+        <Button Content="Elaborar Planilla" HorizontalAlignment="Left" Margin="589,194,0,0" VerticalAlignment="Top" Width="188" Height="61" FontSize="20" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="589,298,0,0" VerticalAlignment="Top" Width="188" Height="61" FontSize="20" Click="Button_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
